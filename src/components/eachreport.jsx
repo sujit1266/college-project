@@ -1,5 +1,4 @@
 import "../styling/assistant.css";
-// import { CiTempHigh } from "react-icons/ci";
 
 
 const Eachreport = (props) => {
