@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import "./LoginSignUp.css";
-// import user_icon from "../Assets/person.png";
-// import email_icon from "../Assets/email.png";
-// import password_icon from "../Assets/password.png";
+import "../styling/LoginSignUp.css";
+
 
 const LoginSignUp = () => {
   const [action, setAction] = useState("Sign Up");

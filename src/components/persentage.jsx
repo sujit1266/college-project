@@ -1,4 +1,4 @@
-import "./persentage.css";
+import "../styling/persentage.css";
 
 
 const Showpersentage = (props) => {
