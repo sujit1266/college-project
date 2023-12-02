@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Details.css";
+import "../styling/Details.css";
 import Showpersentage from "./persentage";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";

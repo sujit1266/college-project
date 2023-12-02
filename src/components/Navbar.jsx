@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Navbar.css";
+import "../styling/Navbar.css";
 import { TbCircleArrowRight } from "react-icons/tb";
 import { RiSettings4Line } from "react-icons/ri";
 import { TbLogout } from "react-icons/tb";

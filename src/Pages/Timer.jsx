@@ -1,0 +1,2 @@
+import "../styling/timer.css";
+

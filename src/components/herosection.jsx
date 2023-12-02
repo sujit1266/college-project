@@ -1,6 +1,6 @@
 import Assistant from "./assistant";
 import Details from "./Details";
-import "./herosection.css";
+import "../styling/herosection.css";
 
 const Herosection=()=>{
      return(

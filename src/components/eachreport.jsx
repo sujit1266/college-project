@@ -1,4 +1,4 @@
-import "./assistant.css";
+import "../styling/assistant.css";
 // import { CiTempHigh } from "react-icons/ci";
 
 

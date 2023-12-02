@@ -1,0 +1,31 @@
+.inner-div{
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+.per1{
+     border-right: 5px solid yellow;
+     border-left: 5px solid whitesmoke;
+     border-top: 5px solid whitesmoke;
+     border-bottom: 5px solid whitesmoke;
+}
+
+.per2{
+     border-right: 5px solid blue;
+     border-left: 5px solid whitesmoke;
+     border-top: 5px solid whitesmoke;
+     border-bottom: 5px solid whitesmoke;
+}
+
+.per3{
+     border-right: 5px solid red;
+     border-left: 5px solid whitesmoke;
+     border-top: 5px solid whitesmoke;
+     border-bottom: 5px solid whitesmoke;
+}
+
