@@ -8,7 +8,6 @@ import { FaCloudShowersHeavy } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 import { useEffect, useState } from "react";
-import { RiCelsiusFill } from "react-icons/ri";
 import axios from "axios";
 
 const API_endpoint = `https://api.openweathermap.org/data/2.5`;
