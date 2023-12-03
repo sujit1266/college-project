@@ -155,9 +155,11 @@
      margin-right: 5%;
 }
 
-.field{
-     height: 353px;
-     width: 95.5%;
-     background-image: url('../fieldimage.jpg');
+.field {
+  height: 353px;
+  width: 95.5%;
+  border-radius: 20px;
+  /* background-image: url('../fieldimage.jpg');
      background-size: cover;
+     object-fit: cover; */
 }
