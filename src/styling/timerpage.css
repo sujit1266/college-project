@@ -26,15 +26,39 @@
 
 .main-timer{
      margin-top: 5%;
-     height: 70%;
+     height: 80%;
      width: 100%;
+     display: flex;
+}
+
+.mainTimer-div1{
+     height: 100%;
+     width: 33%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.mainTimer-div2{
+     height: 100%;
+     width: 60%;
+}
+
+.outr-clock{
+     height: 220px;
+     width: 220px;
+     margin-top: 20%;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 20px solid #336f8f;
+     box-shadow: 5px 5px 50px 5px #336580;
 }
 
 .clock{
-     margin-top: 15%;
-     margin-left: 5%;
-     height: 200px;
-     width: 200px;
+     height: 201px;
+     width: 201px;
      border: 10px solid red;
      border-radius: 50%;
      display: flex;
@@ -44,11 +68,19 @@
 
 .onof-button{
      height: 8%;
-     width: 13%;
+     width: 30%;
      border-radius: 10px;
      border: none;
      background-color: blue;
      color: whitesmoke;
      margin-top: 10%;
-     margin-left: 10%;
+     cursor: pointer;
+     font-weight: bold;
+}
+
+.timer-options{
+     height: 50%;
+     width: 70%;
+     margin-top: 15%;
+     margin-left: 17%;
 }
