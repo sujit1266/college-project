@@ -1,0 +1,54 @@
+.timer-page{
+     display: flex;
+     height: 100%;
+     width: 95%;
+     border-radius: 0px 20px 20px 0px;
+}
+
+
+.set-time{
+     height: 100%;
+     width: 70%;
+     border-right: 1px solid gray;
+     padding-left: 3%;
+}
+
+.top-text{
+     margin-top: 2.5%;
+     letter-spacing: 0;
+}
+
+.top-text p,h1{
+     margin: 0;
+     padding: 0;
+}
+
+
+.main-timer{
+     margin-top: 5%;
+     height: 70%;
+     width: 100%;
+}
+
+.clock{
+     margin-top: 15%;
+     margin-left: 5%;
+     height: 200px;
+     width: 200px;
+     border: 10px solid red;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.onof-button{
+     height: 8%;
+     width: 13%;
+     border-radius: 10px;
+     border: none;
+     background-color: blue;
+     color: whitesmoke;
+     margin-top: 10%;
+     margin-left: 10%;
+}

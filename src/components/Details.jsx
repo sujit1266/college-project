@@ -7,7 +7,7 @@ import { IoIosArrowForward } from "react-icons/io";
 const Details = () => {
      return (
           <div className="details">
-          <Link to={"/login"}>
+          <Link to={"/signup"}>
                <button className="loginbutton">Login</button>
                </Link>
                <div className="outer-div">

@@ -156,8 +156,8 @@
 }
 
 .field{
-     height: 353px;
+     height: 360px;
      width: 95.5%;
-     background-image: url('../fieldimage.jpg');
-     background-size: cover;
+     /* background-image: url('../fieldimage.jpg');
+     background-size: cover; */
 }
