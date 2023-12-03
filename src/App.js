@@ -1,21 +1,26 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Main from "./Main";
 import LoginSignUp from "./Pages/LoginSignUp";
-import Login from "./Pages/Login";
+import Navbar from "./components/Navbar";
+import Herosection from './components/herosection';
+import Timerpage from "./Pages/Timer";
+import Login from "./Pages/Login"
+
+
 
 const App = () => {
-  return (
-    <Router>
-      <div className="home">
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/signup" element={<LoginSignUp />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
-      </div>
-    </Router>
-  );
-};
+     return (
+          <Router>
+               <div className="home">
+                    <Navbar />
+                    <Routes>
+                         <Route path="/" element={<Herosection />} />
+                         <Route path="/timer" element={<Timerpage />} />
+                         <Route path="/signup" element={<LoginSignUp />} />
+                         <Route path="/login" element={<Login />} />
+                    </Routes>
+               </div>
 
-export default App;
+          </Router>
+     )
+}

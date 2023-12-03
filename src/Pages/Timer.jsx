@@ -1,12 +1,72 @@
-import "../styling/timer.css";
-import "../Main.css";
+import "../styling/timerpage.css";
+import Details from "../components/Details";
+import { useEffect, useState } from "react";
 
-const Timer = () => {
+
+
+const Timerpage = () => {
+     const [min, setmin] = useState(0);
+     const [hour, sethour] = useState(0);
+     const [second, setsecond] = useState(0);
+     const [stop, setstop] = useState(false);
+
+
+     const onofbutton = () => {
+          if (stop === false) {
+               setstop(true);
+               document.querySelector('.onof-button').innerHTML='Turn off';
+          }
+          if (stop === true) {
+               setstop(false);
+               document.querySelector('.onof-button').innerHTML='Turn on';
+          }
+     }
+
+
+
+     useEffect(() => {
+          let intervel = null;
+          if (stop) {
+               intervel = setInterval(() => {
+                    setsecond(second + 1);
+                    if (min > 59) {
+                         sethour(hour + 1);
+                         setmin(0);
+                         clearInterval(intervel);
+                    }
+                    if (second > 59) {
+                         setmin(min + 1);
+                         setsecond(0);
+                         clearInterval(intervel);
+                    }
+               }, 1000)
+          }
+          else {
+               clearInterval(intervel);
+          }
+
+          return () => {
+               clearInterval(intervel);
+          }
+     })
+
      return (
-          <div className="timer">
-
+          <div className="timer-page">
+               <div className="set-time">
+                    <div className="top-text">
+                         <h1>Turn on Motor</h1>
+                         <p>Helping You To Make The Right Decision and Seed Your Plant</p>
+                    </div>
+                    <div className="main-timer">
+                         <div className="clock">
+                              <h1>{hour < 10 ? "0" + hour : hour}:{min < 10 ? "0" + min : min}:{second < 10 ? "0" + second : second}</h1>
+                         </div>
+                         <button onClick={onofbutton} className="onof-button">Turn on</button>
+                    </div>
+               </div>
+               <Details />
           </div>
      )
 }
 
-export default Timer;
+export default Timerpage;
