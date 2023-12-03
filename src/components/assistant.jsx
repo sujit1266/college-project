@@ -1,4 +1,4 @@
-import "./assistant.css";
+import "../styling/assistant.css";
 import { IoIosSearch } from "react-icons/io";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { CiTempHigh } from "react-icons/ci";
