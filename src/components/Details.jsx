@@ -15,9 +15,9 @@ const Details = () => {
 
                     </div>
                     <div className="show-persentage">
-                         <Showpersentage classname="per1 inner-div" persent="10%" />
-                         <Showpersentage classname="per2 inner-div" persent="20%" />
-                         <Showpersentage classname="per3 inner-div" persent="30%" />
+                         <Showpersentage classname="per1 inner-div" persent="10%" name="Fat" />
+                         <Showpersentage classname="per2 inner-div" persent="20%" name="Protines"/>
+                         <Showpersentage classname="per3 inner-div" persent="30%" name="Crabs"/>
                     </div>
                     <div className="information">
                          <h1>Wheat</h1>
