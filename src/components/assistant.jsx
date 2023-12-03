@@ -13,7 +13,6 @@ import axios from "axios";
 const API_endpoint = `https://api.openweathermap.org/data/2.5`;
 const API_key = `7fcc9cf023a47757aa5263e37dac405f`;
 const Assistant = () => {
-  const position = { lat: 53.54, lng: 10 };
   const [latitude, setLatitude] = useState("");
   const [longitude, setLongitude] = useState("");
   const [response, setResponse] = useState({});
@@ -23,11 +22,11 @@ const Assistant = () => {
         const position = await new Promise((resolve, reject) => {
           navigator.geolocation.getCurrentPosition(resolve, reject);
         });
-
+        
         const { latitude, longitude } = position.coords;
         setLatitude(latitude);
         setLongitude(longitude);
-
+        
         const finalAPIEndPoint = `https://api.weatherbit.io/v2.0/current?lat=${latitude}&lon=${longitude}&key=fff910b5c1094a88a1cf204e71032260&include=minutely`;
         const response = await axios.get(finalAPIEndPoint);
         console.log(response?.data?.data[0]);
@@ -37,10 +36,11 @@ const Assistant = () => {
         console.error("Error fetching data:", error.message);
       }
     };
-
+    
     fetchData();
   }, []);
-
+  const position = { lat:22.4979 , lng:88.3191 };
+  
   return (
     <div className="assistant">
       <div className="div1">
