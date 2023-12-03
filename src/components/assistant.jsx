@@ -9,8 +9,6 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 
 
-
-
 const Assistant = () => {
      const position = { lat: 53.54, lng: 10 };
 
@@ -51,6 +49,5 @@ const Assistant = () => {
           </div>
      )
 }
-
 
 export default Assistant;

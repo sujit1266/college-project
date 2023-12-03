@@ -14,8 +14,6 @@ const Login = () => {
         <div className="inputs">
            
            
-           
-    
           {/* <img src={email_icon} alt="User Email" /> */}
           <div className="input">
             {/* <img src={email_icon} alt="User Email" /> */}
